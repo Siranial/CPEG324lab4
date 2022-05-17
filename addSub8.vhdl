@@ -15,7 +15,7 @@ component twosComp8 is
             O: out std_logic_vector (7 downto 0));
 end component;
 
-component mux2to1 is
+component bit8mux2to1 is
     Port ( A,B : in STD_LOGIC_VECTOR (7 downto 0);
            S : in STD_LOGIC;
            Y : out STD_LOGIC_vector (7 downto 0));
@@ -36,7 +36,7 @@ begin
 
     -- Feeds the adder negative B when op(0) = 1 (subtracting)
     TC: twosComp8 port map(I => B, O => negB);
-    m2t1: mux2to1 port map(A => B, B => negB, S => S, Y => muxOut);
+    m2t1: bit8mux2to1 port map(A => B, B => negB, S => S, Y => muxOut);
     -- 8 bit adder block
     FA0: fullAdder port map(    A => A(0), B => muxOut(0), Cin => '0', 
                                 O => Y(0), Cout => carry(0));

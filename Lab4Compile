@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Analyzing VHDL Files:"
+for file in "$PWD"/*.vhdl
+do ghdl -a "$file"
+done	
