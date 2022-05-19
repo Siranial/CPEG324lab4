@@ -6,11 +6,11 @@ end calc_TB;
 
 architecture behav of calc_TB is
 
-	component calc is
-		Port ( INSTR : in STD_LOGIC_VECTOR (7 downto 0);
-			   clk, reset : in STD_LOGIC;
-			   PRINT : out STD_LOGIC_vector (7 downto 0));
-	end component;
+component calc is
+	Port ( INSTR : in STD_LOGIC_VECTOR (7 downto 0);
+			clk, reset : in STD_LOGIC;
+			PRINT : out STD_LOGIC_vector (7 downto 0));
+end component;
 
 -- Input signals
 signal INSTR: std_logic_vector (7 downto 0);
@@ -36,10 +36,10 @@ end record;
 type pattern_array is array (natural range <>) of pattern_type;
 constant patterns : pattern_array :=
 --  INSTR   ,clk,reset, PRINT
-(("00000001",'0','0',"00000000"),
-("00000001",'1','0',"00000000"),
-("10000001",'0','0',"00000000"),
-("10000001",'1','0',"00000001")
+(("10000001",'0','0',"UUUUUUUU"),
+("10000001",'1','0',"UUUUUUUU"),
+("11000000",'0','0',"00000001"),
+("11000000",'1','0',"00000001")
 );
 begin
 --  Check each pattern.

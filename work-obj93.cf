@@ -1,43 +1,43 @@
 v 4
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/calc.vhdl" "9c19d74c76f4ced5f354bf204a83f1eeb362c6a5" "20220517172032.003":
-  entity calc at 1( 0) + 0 on 179;
-  architecture behavioral of calc at 10( 225) + 0 on 180;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/regb.vhdl" "0fe75e34e358792092cf19840d7d20919010e48c" "20220517172032.164":
-  entity regb at 1( 0) + 0 on 195;
-  architecture behav of regb at 15( 541) + 0 on 196;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/mux8.vhdl" "16b2dc74864bdbcbf606f2d278b85e6744832146" "20220517172032.126":
-  entity mux8 at 1( 0) + 0 on 191;
-  architecture behavioral of mux8 at 13( 388) + 0 on 192;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/demux.vhdl" "bc7e1941869a4ecfcc68e616407b4b4fe4f5d521" "20220517172032.090":
-  entity demux8 at 1( 0) + 0 on 187;
-  architecture behavioral of demux8 at 11( 242) + 0 on 188;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/comparator.vhdl" "de66e31a886c75e2f4f42acd83702d4c0f7a6509" "20220517172032.050":
-  entity comparator at 1( 0) + 0 on 183;
-  architecture behavioral of comparator at 10( 180) + 0 on 184;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/bit8mux2to1.vhdl" "a0ca7d75b123c1cd90c9341999bc6f4ec846d6e0" "20220517172031.973":
-  entity bit8mux2to1 at 1( 0) + 0 on 177;
-  architecture behavioral of bit8mux2to1 at 10( 224) + 0 on 178;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/alu.vhdl" "7036c5640c8c590a4f3a52f1d077512a7470657f" "20220517172031.908":
-  entity alu at 1( 0) + 0 on 173;
-  architecture behavioral of alu at 12( 271) + 0 on 174;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/addSub8.vhdl" "ef7dd72d0f2fba90bac2c1af5e06dbb1524c451f" "20220517172031.875":
-  entity addsub8 at 1( 0) + 0 on 171;
-  architecture behavioral of addsub8 at 11( 218) + 0 on 172;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/bit2mux2to1.vhdl" "684695cf5da6f8210d80710101e3f5b4caab3fa2" "20220517172031.940":
-  entity bit2mux2to1 at 1( 0) + 0 on 175;
-  architecture behavioral of bit2mux2to1 at 10( 224) + 0 on 176;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/calcTB.vhdl" "c2290005b6a7aab4adab842eb5c2a99da57ca8ad" "20220517172032.023":
-  entity calc_tb at 1( 0) + 0 on 181;
-  architecture behav of calc_tb at 7( 82) + 0 on 182;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/controller.vhdl" "80aed9463ac95ceb5ae7eef1347ee1388a982baa" "20220517172032.070":
-  entity controller at 1( 0) + 0 on 185;
-  architecture behavioral of controller at 9( 201) + 0 on 186;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/fullAdder.vhdl" "d275b337a0effef223d2b8ecab3c022f3b0a6991" "20220517172032.108":
-  entity fulladder at 1( 0) + 0 on 189;
-  architecture behavioral of fulladder at 10( 174) + 0 on 190;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/reg.vhdl" "60e078cd6390b274692a1429d85038db849fbed3" "20220517172032.144":
-  entity reg at 1( 0) + 0 on 193;
-  architecture behav of reg at 13( 328) + 0 on 194;
-file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/twosComp8.vhdl" "f9766010829eb90464892556a5880f46ccf1c6e7" "20220517172032.192":
-  entity twoscomp8 at 1( 0) + 0 on 197;
-  architecture behavioral of twoscomp8 at 9( 188) + 0 on 198;
+file . "controller.vhdl" "2da3087a262bd952eb8d975fb9d3debbaac970d8" "20220519172633.011":
+  entity controller at 1( 0) + 0 on 457;
+  architecture behavioral of controller at 9( 208) + 0 on 458;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/twosComp8.vhdl" "f9766010829eb90464892556a5880f46ccf1c6e7" "20220519165751.183":
+  entity twoscomp8 at 1( 0) + 0 on 429;
+  architecture behavioral of twoscomp8 at 9( 188) + 0 on 430;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/reg.vhdl" "60e078cd6390b274692a1429d85038db849fbed3" "20220519165751.150":
+  entity reg at 1( 0) + 0 on 425;
+  architecture behav of reg at 13( 328) + 0 on 426;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/fullAdder.vhdl" "d275b337a0effef223d2b8ecab3c022f3b0a6991" "20220519165751.115":
+  entity fulladder at 1( 0) + 0 on 421;
+  architecture behavioral of fulladder at 10( 174) + 0 on 422;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/bit2mux2to1.vhdl" "684695cf5da6f8210d80710101e3f5b4caab3fa2" "20220519165751.002":
+  entity bit2mux2to1 at 1( 0) + 0 on 409;
+  architecture behavioral of bit2mux2to1 at 10( 224) + 0 on 410;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/addSub8.vhdl" "ef7dd72d0f2fba90bac2c1af5e06dbb1524c451f" "20220519165750.970":
+  entity addsub8 at 1( 0) + 0 on 405;
+  architecture behavioral of addsub8 at 11( 218) + 0 on 406;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/alu.vhdl" "7036c5640c8c590a4f3a52f1d077512a7470657f" "20220519165750.986":
+  entity alu at 1( 0) + 0 on 407;
+  architecture behavioral of alu at 12( 271) + 0 on 408;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/bit8mux2to1.vhdl" "a0ca7d75b123c1cd90c9341999bc6f4ec846d6e0" "20220519165751.018":
+  entity bit8mux2to1 at 1( 0) + 0 on 411;
+  architecture behavioral of bit8mux2to1 at 10( 224) + 0 on 412;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/comparator.vhdl" "de66e31a886c75e2f4f42acd83702d4c0f7a6509" "20220519165751.064":
+  entity comparator at 1( 0) + 0 on 415;
+  architecture behavioral of comparator at 10( 180) + 0 on 416;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/demux.vhdl" "bc7e1941869a4ecfcc68e616407b4b4fe4f5d521" "20220519165751.098":
+  entity demux8 at 1( 0) + 0 on 419;
+  architecture behavioral of demux8 at 11( 242) + 0 on 420;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/mux8.vhdl" "16b2dc74864bdbcbf606f2d278b85e6744832146" "20220519165751.132":
+  entity mux8 at 1( 0) + 0 on 423;
+  architecture behavioral of mux8 at 13( 388) + 0 on 424;
+file / "/mnt/c/Users/Jon/Documents/GitHub/CPEG324lab4/regb.vhdl" "0fe75e34e358792092cf19840d7d20919010e48c" "20220519165751.166":
+  entity regb at 1( 0) + 0 on 427;
+  architecture behav of regb at 15( 541) + 0 on 428;
+file . "calc.vhdl" "3dfa8d737ef1caecd5604e1df811b4d1405b46fb" "20220519172634.318":
+  entity calc at 1( 0) + 0 on 459;
+  architecture behavioral of calc at 10( 225) + 0 on 460;
+file . "calcTB.vhdl" "32f72ddc87714b6709d860177873f11aeafe55e6" "20220519172757.398":
+  entity calc_tb at 1( 0) + 0 on 463;
+  architecture behav of calc_tb at 7( 82) + 0 on 464;
