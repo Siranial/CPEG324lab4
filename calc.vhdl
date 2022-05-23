@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity calc is
     Port ( INSTR : in STD_LOGIC_VECTOR (7 downto 0);
-           clk, reset : in STD_LOGIC;
+           clk : in STD_LOGIC;
            PRINT : out STD_LOGIC_vector (7 downto 0));
 end calc;
 
@@ -49,12 +49,14 @@ signal RdIn: std_logic_vector(1 downto 0);
 -- Sign extended Immediate
 signal SignExtImm: std_logic_vector(7 downto 0) := (others=>'0');
 
-
 -- Register Outputs and Inputs
 signal RsCon,RtCon,writeData: std_logic_vector(7 downto 0);
 
 -- Adder outputs and inputs
 signal adderOut: std_logic_vector(7 downto 0);
+
+-- Printer intermediate value
+signal toprint: std_logic_vector(7 downto 0);
 
 
 begin
@@ -77,7 +79,7 @@ immux : bit8mux2to1 port map(
 -- decide to print data or nothing
 pntmux : bit8mux2to1 port map(
     A => "UUUUUUUU", B => RsCon,
-    S => PrintEn, Y => PRINT);
+    S => PrintEn, Y => toprint);
 
 -- stores data in 4 8 bit registers
 regbank : regb port map(
@@ -91,5 +93,11 @@ adder : addSub8 port map(
 
 -- Sign extension of immediate
 SignExtImm(3 downto 0) <= INSTR(3 downto 0);
+
+-- Printing Logic
+process(clk) begin
+    if rising_edge(clk) then PRINT <= toprint;
+    end if;
+end process;
 
 end Behavioral;
